@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Global CSS Variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --accent: #f97316; /* Orange Accent */
+  --radius: 8px;
+  /* Define your font variables here instead of using @theme */
+  --font-sans: "Geist", sans-serif;
+  --font-mono: "Geist_Mono", monospace;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Global Body Styling */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  @apply antialiased scroll-smooth;
+}
+
+/* Buttons */
+button {
+  @apply px-4 py-2 rounded transition duration-200 ease-in-out;
+}
+
+button:hover {
+  @apply scale-105 shadow-md;
+}
+
+/* Section Styling */
+section {
+  @apply py-16 px-6 md:px-12 lg:px-24;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}

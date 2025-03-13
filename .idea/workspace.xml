@@ -5,72 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2083a1f-4902-45c9-82cd-a18f0802a39e" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/northshire-kitchens.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/WhatsApp Image 2025-03-13 at 12.38.31(2).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/WhatsApp Image 2025-03-13 at 12.38.31.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/accessories.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/ascot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/cambridge.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/cartmel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/chillingham.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/colours.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/durham.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/favicon-96x96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/favicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/file.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/globe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/grantham.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/handles.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/langley.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/linear.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/linear_handleless.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/lucente-gloss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/lucente-matt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/newmarket.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/next.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/oxford.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/rydal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/sinks.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/site.webmanifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/stirling.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/storage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/stratto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/stratto_handleless.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/taps.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vercel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vivo-gloss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vivo-matt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vivo_gloss_handleless.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vivo_matt_handleless.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/web-app-manifest-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/web-app-manifest-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/window.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/windsor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/tailwind.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Considerations.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/KitchenCollections.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +38,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
+    "settings.editor.selected.configurable": "vcs.Git",
     "ts.external.directory.path": "/home/berend/WebstormProjects/northshire-kitchens/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -137,8 +72,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1741817309092</updated>
-      <workItem from="1741817311316" duration="22116000" />
+      <workItem from="1741817311316" duration="22657000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1741904083090</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741904083090</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d2083a1f-4902-45c9-82cd-a18f0802a39e" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/KitchenCollections.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/KitchenCollections.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741817309092</updated>
       <workItem from="1741817311316" duration="24450000" />
-      <workItem from="1741906788354" duration="1036000" />
+      <workItem from="1741906788354" duration="1373000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

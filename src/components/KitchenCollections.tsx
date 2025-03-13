@@ -67,22 +67,25 @@ export default function KitchenCollections() {
                 Let’s create a kitchen that feels like home, one that carries the warmth of your past and the promise of moments yet to come.
             </p>
 
-            {/* 🔹 Tabs Navigation */}
-            <div className="flex justify-center space-x-4 mt-8">
-                {Object.keys(collections).map((key) => (
-                    <button
-                        key={key}
-                        className={`px-6 py-2 text-lg font-semibold rounded-lg transition ${
-                            activeTab === key
-                                ? "bg-orange-500 text-white shadow-md"
-                                : "bg-gray-200 text-gray-800 hover:bg-gray-300"
-                        }`}
-                        onClick={() => setActiveTab(key as keyof typeof collections)}
-                    >
-                        {collections[key as keyof typeof collections].name}
-                    </button>
-                ))}
+            {/* 🔹 Tabs Navigation (Scrollable on Mobile) */}
+            <div className="mt-8 overflow-x-auto">
+                <div className="flex space-x-4 md:justify-center px-2 w-max mx-auto">
+                    {Object.keys(collections).map((key) => (
+                        <button
+                            key={key}
+                            className={`px-6 py-2 text-lg font-semibold rounded-lg transition whitespace-nowrap ${
+                                activeTab === key
+                                    ? "bg-orange-500 text-white shadow-md"
+                                    : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+                            }`}
+                            onClick={() => setActiveTab(key as keyof typeof collections)}
+                        >
+                            {collections[key as keyof typeof collections].name}
+                        </button>
+                    ))}
+                </div>
             </div>
+
 
             {/* 🔹 Collection Content */}
             <div className="mt-10">

@@ -5,7 +5,7 @@ import Image from "next/image";
 const considerations = [
     {
         name: "Colours",
-        description: "Immerse yourself in the world of kitchen design excellence by Jigsaw Kitchens. Our carefully curated collection presents kitchens that redefine culinary spaces. Select from a carefully curated palette of 36 paint-to-order colours or choose from over 2,600 bespoke colours.",
+        description: "Immerse yourself in the world of kitchen design excellence by Northshire Kitchens. Our carefully curated collection presents kitchens that redefine culinary spaces. Select from a carefully curated palette of 36 paint-to-order colours or choose from over 2,600 bespoke colours.",
         image: "/images/colours.webp",
     },
     {
@@ -20,12 +20,12 @@ const considerations = [
     },
     {
         name: "Handles",
-        description: "Handles are a highly personal choice and can change the kitchen aesthetic dramatically. Jigsaw offers a multitude of handle shapes, sizes and designs to round off your door choice in style.",
-        image: "/images/handles.jpg",
+        description: "Handles are a highly personal choice and can change the kitchen aesthetic dramatically. Northshire Kitchens offers a multitude of handle shapes, sizes and designs to round off your door choice in style.",
+        image: "/images/handles2.jpg",
     },
     {
         name: "Taps",
-        description: "Your kitchen sink is bound to be used almost every day so make sure you choose carefully. From larger drying areas to practical half bowls and colour choices we know that the sink is another important piece in your Jigsaw kitchen.",
+        description: "Your kitchen sink is bound to be used almost every day so make sure you choose carefully. From larger drying areas to practical half bowls and colour choices we know that the sink is another important piece in your Northshire kitchen.",
         image: "/images/taps.jpg",
     },
 ];
@@ -38,7 +38,7 @@ export default function Considerations() {
             <p className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 When designing your kitchen, it's the finer details that truly bring it all together. From clever storage solutions
                 that keep everything within easy reach to the perfect tap that complements both form and function, every element plays
-                a role in shaping your space. Whether it’s choosing a sink that suits your daily needs, selecting handles that enhance your style,
+                a role in shaping your space. Whether it's choosing a sink that suits your daily needs, selecting handles that enhance your style,
                 or maximizing cabinet space with smart interiors, these final touches ensure your kitchen is as practical as it is beautiful.
             </p>
 

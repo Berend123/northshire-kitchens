@@ -2,7 +2,7 @@
 
 import { Link } from "react-scroll";
 import Image from "next/image";
-import { Facebook, Mail, Phone } from "lucide-react";
+import { Facebook, Mail, Phone, Instagram } from "lucide-react";
 
 export function Footer() {  // ✅ Ensure it's a named export
     return (
@@ -15,6 +15,41 @@ export function Footer() {  // ✅ Ensure it's a named export
                     <p className="text-sm mt-2">
                         &copy; {new Date().getFullYear()} Northshire Kitchens. All Rights Reserved.
                     </p>
+                    {/* ✅ Document Links */}
+                    <div className="mt-4 text-sm space-y-1">
+                        <p>
+                            <a href="/documents/Privacy Policy.pdf" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               className="hover:text-orange-500 transition">
+                                Privacy Policy
+                            </a>
+                        </p>
+                        <p>
+                            <a href="/documents/Modern Slavery and Human Trafficking Policy.pdf" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               className="hover:text-orange-500 transition">
+                                Modern Slavery Policy
+                            </a>
+                        </p>
+                        <p>
+                            <a href="/documents/Anti Bribery Policy.pdf" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               className="hover:text-orange-500 transition">
+                                Anti-Bribery Policy
+                            </a>
+                        </p>
+                        <p>
+                            <a href="/documents/Accessibility Statement.pdf" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               className="hover:text-orange-500 transition">
+                                Accessibility Statement
+                            </a>
+                        </p>
+                    </div>
                 </div>
 
                 {/* ✅ Navigation Links */}
@@ -47,8 +82,16 @@ export function Footer() {  // ✅ Ensure it's a named export
                         <Facebook size={24} />
                     </a>
 
+                    {/* Instagram */}
+                    <a href="https://www.instagram.com/northshire_kitchens"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="hover:text-orange-500 transition">
+                        <Instagram size={24} />
+                    </a>
+
                     {/* Email */}
-                    <a href="mailto:northshiredevelopments@gmail.com"
+                    <a href="mailto:sales@northshirekitchens.com"
                        className="hover:text-orange-500 transition">
                         <Mail size={24} />
                     </a>

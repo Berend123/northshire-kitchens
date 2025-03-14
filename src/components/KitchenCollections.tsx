@@ -34,8 +34,8 @@ const collections = {
         description: `Our contemporary collection is where sleek design meets functionality. 
         Minimalist and modern, these kitchens provide clean lines, bold contrasts, and innovative materials that define contemporary living.`,
         kitchens: [
-            { src: "/images/lucente-gloss.jpg", name: "Lucente Gloss", description: "This popular ‘J’ pull handleless range offers contemporary minimalism with a light-reflecting lacquered gloss finish." },
-            { src: "/images/lucente-matt.jpg", name: "Lucente Matt", description: "The same ‘J’ pull handleless range but in a subtle matt finish, offering refined elegance." },
+            { src: "/images/lucente-gloss.jpg", name: "Lucente Gloss", description: "This popular 'J' pull handleless range offers contemporary minimalism with a light-reflecting lacquered gloss finish." },
+            { src: "/images/lucente-matt.jpg", name: "Lucente Matt", description: "The same 'J' pull handleless range but in a subtle matt finish, offering refined elegance." },
             { src: "/images/grantham.jpg", name: "Grantham", description: "A statement-making style, combining the beloved shaker design with a contemporary recessed handle." },
             { src: "/images/vivo-gloss.jpg", name: "Vivo+ Gloss", description: "Simple and understated, Vivo+ epitomises the contemporary, minimal feel with its ultra-modern gloss finish." },
             { src: "/images/vivo-matt.jpg", name: "Vivo+ Matt", description: "Embrace the beautiful simplicity of a slab door with a painted super matt finish for a sense of understated luxury." },
@@ -61,18 +61,17 @@ export default function KitchenCollections() {
         <section id="collections" className="py-16 px-6 md:px-12 lg:px-24 text-center bg-gray-50">
             <h2 className="text-3xl font-bold text-gray-800">Explore Our Kitchen Collections</h2>
 
-            {/* 🔹 Emotional Introduction */}
-            <p className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed italic">
-                Your kitchen isn’t just a space—it’s a collection of moments, a reflection of your journey.
-                Let’s create a kitchen that feels like home, one that carries the warmth of your past and the promise of moments yet to come.
+            <p className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                Discover our four distinct kitchen collections, each designed to suit different styles and preferences. 
+                From timeless elegance to modern minimalism, our Classic, Contour, Contemporary, and True Handleless ranges offer a variety of options to create your perfect kitchen.
             </p>
 
             {/* 🔹 Tabs Navigation */}
-            <div className="flex justify-center space-x-4 mt-8">
+            <div className="flex flex-col md:flex-row justify-center gap-2 md:space-x-4 mt-8">
                 {Object.keys(collections).map((key) => (
                     <button
                         key={key}
-                        className={`px-6 py-2 text-lg font-semibold rounded-lg transition ${
+                        className={`px-6 py-2 text-lg font-semibold rounded-lg transition w-full md:w-auto ${
                             activeTab === key
                                 ? "bg-orange-500 text-white shadow-md"
                                 : "bg-gray-200 text-gray-800 hover:bg-gray-300"

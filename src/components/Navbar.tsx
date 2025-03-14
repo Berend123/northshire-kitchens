@@ -11,8 +11,8 @@ export function Navbar() {
 
     return (
         <nav className="absolute top-0 left-0 w-full px-6 md:px-12 py-4 text-white transition-all duration-300 z-10">
-            <div className="flex justify-between items-start">
-                {/* ✅ LOGO (Properly aligned) */}
+            <div className="flex justify-between items-start relative">
+                {/* ✅ LOGO (Left) */}
                 <Link href="/" className="flex items-start">
                     <Image
                         src="/images/logo.svg"
@@ -24,7 +24,12 @@ export function Navbar() {
                     />
                 </Link>
 
-                {/* ✅ Desktop Navigation */}
+                {/* ✅ Company Name (Center) */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 hidden md:block mt-10">
+                    <h1 className="text-2xl font-bold tracking-wider">NORTHSHIRE KITCHENS</h1>
+                </div>
+
+                {/* ✅ Desktop Navigation (Right) */}
                 <ul className="hidden md:flex gap-8 text-lg items-start">
                     <li className="hover:text-orange-500 transition">
                         <ScrollLink to="home-details" smooth={true} duration={600}>Home</ScrollLink>

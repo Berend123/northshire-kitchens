@@ -11,6 +11,14 @@ export async function POST(req: Request) {
     try {
         const { name, email, phone, message } = await req.json();
 
+        // Log environment variables (without exposing sensitive data)
+        console.log('Environment check:', {
+            SMTP_USER: process.env.SMTP_USER ? 'Set' : 'Not set',
+            SMTP_PASSWORD: process.env.SMTP_PASSWORD ? 'Set' : 'Not set',
+            NODE_ENV: process.env.NODE_ENV,
+            PWD: process.env.PWD
+        });
+
         console.log('Creating SMTP transport...');
         
         // Create a transporter with Office 365 SMTP settings
@@ -30,10 +38,6 @@ export async function POST(req: Request) {
         } as TransportOptions);
 
         console.log('Verifying SMTP connection...');
-        console.log('Using credentials:', {
-            user: process.env.SMTP_USER ? '(set)' : '(not set)',
-            pass: process.env.SMTP_PASSWORD ? '(set)' : '(not set)'
-        });
         
         // Verify connection configuration
         await transporter.verify();
@@ -76,7 +80,12 @@ ${message}
             message: smtpError.message,
             code: smtpError.code,
             command: smtpError.command,
-            stack: smtpError.stack
+            stack: smtpError.stack,
+            env: {
+                SMTP_USER: process.env.SMTP_USER ? 'Set' : 'Not set',
+                SMTP_PASSWORD: process.env.SMTP_PASSWORD ? 'Set' : 'Not set',
+                NODE_ENV: process.env.NODE_ENV
+            }
         });
         
         return NextResponse.json(

@@ -1,20 +1,44 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import type { TransportOptions } from 'nodemailer';
+
+interface SMTPError extends Error {
+    code?: string;
+    command?: string;
+}
 
 export async function POST(req: Request) {
     try {
         const { name, email, phone, message } = await req.json();
 
-        // Create a transporter
+        console.log('Creating SMTP transport...');
+        
+        // Create a transporter with Office 365 SMTP settings
         const transporter = nodemailer.createTransport({
-            host: process.env.SMTP_HOST,
-            port: Number(process.env.SMTP_PORT),
-            secure: true,
+            host: "smtp.office365.com",
+            port: 587,
+            secure: false,
             auth: {
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASSWORD,
             },
+            connectionTimeout: 30000, // 30 seconds
+            greetingTimeout: 30000,   // 30 seconds
+            socketTimeout: 30000,     // 30 seconds
+            debug: true,
+            logger: true
+        } as TransportOptions);
+
+        console.log('Verifying SMTP connection...');
+        console.log('Using credentials:', {
+            user: process.env.SMTP_USER ? '(set)' : '(not set)',
+            pass: process.env.SMTP_PASSWORD ? '(set)' : '(not set)'
         });
+        
+        // Verify connection configuration
+        await transporter.verify();
+        
+        console.log('SMTP connection verified, sending email...');
 
         // Email content
         const mailOptions = {
@@ -40,13 +64,23 @@ ${message}
         };
 
         // Send email
-        await transporter.sendMail(mailOptions);
+        const info = await transporter.sendMail(mailOptions);
+        console.log('Email sent successfully:', info.messageId);
 
         return NextResponse.json({ success: true });
     } catch (error) {
-        console.error('Error sending email:', error);
+        // Detailed error logging
+        const smtpError = error as SMTPError;
+        console.error('Error details:', {
+            name: smtpError.name,
+            message: smtpError.message,
+            code: smtpError.code,
+            command: smtpError.command,
+            stack: smtpError.stack
+        });
+        
         return NextResponse.json(
-            { error: 'Failed to send message' },
+            { error: 'Failed to send message', details: smtpError.message },
             { status: 500 }
         );
     }

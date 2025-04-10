@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://northshirekitchens.com'),
     title: "Northshire Kitchens",
     description: "Expertly crafted kitchens with precision and durability.",
     icons: {

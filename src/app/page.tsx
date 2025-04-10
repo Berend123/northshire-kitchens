@@ -59,8 +59,8 @@ export default function Home() {
                     <Image
                         src="/images/cambridge.jpg"
                         alt="Luxury Cambridge Kitchen Design"
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{ objectFit: 'cover' }}
                         quality={90}
                         priority
                         className="absolute inset-0"
@@ -240,8 +240,8 @@ export default function Home() {
                     <Image
                         src="/images/rydal.jpg"
                         alt="Rydal Kitchen Background"
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{ objectFit: 'cover' }}
                         quality={90}
                         priority
                         className="absolute inset-0"

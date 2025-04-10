@@ -44,12 +44,16 @@ const collections = {
     },
     handleless: {
         name: "True Handleless Collection",
-        description: `Introducing seamless elegance with our handleless profile system, meticulously crafted to offer an uninterrupted and streamlined feel.`,
+        description: `Introducing seamless elegance with our handleless profile system, meticulously crafted to offer an uninterrupted and streamlined feel. Each kitchen showcases the perfect blend of form and function, with clean lines and innovative storage solutions.`,
         kitchens: [
-            { src: "/images/vivo-gloss.jpg", name: "Vivo+ Gloss", description: "Our true handleless rail system has been combined with the polished elegance of Vivo+ Gloss." },
-            { src: "/images/vivo-matt.jpg", name: "Vivo+ Matt", description: "The true handleless kitchen featuring the smooth, tactile finish of Vivo+ Matt." },
-            { src: "/images/stratto.jpg", name: "Stratto", description: "The ultra-modern true handleless kitchen takes on a traditional twist with our popular shaker door style, Stratto." },
-            { src: "/images/linear.jpg", name: "Linear", description: "For a truly European feel, combine the textures of the Linear range with our handleless rail system for a minimal yet warm design." },
+            { src: "/images/vivo-gloss.jpg", name: "Driftwood & White", description: "A sophisticated combination of driftwood-effect tall units and pristine white base units, creating a harmonious blend of warmth and modernity." },
+            { src: "/images/vivo-matt.jpg", name: "Urban White", description: "Sleek white handleless units complemented by rich wooden wall paneling, offering a striking contrast against the contemporary dark floor." },
+            { src: "/images/stratto.jpg", name: "Natural Oak", description: "Warm natural oak units paired with a dramatic black terrazzo-style worktop, bringing an organic yet contemporary feel to the space." },
+            { src: "/images/linear.jpg", name: "Azure Blue", description: "A bold statement in azure blue, featuring our signature handleless profile system that creates clean, uninterrupted lines." },
+            { src: "/images/handleless-5.jpg", name: "Navy & White", description: "An elegant contrast of deep navy island units with crisp white wall cabinets, enhanced by industrial-style pendant lighting." },
+            { src: "/images/handleless-6.jpg", name: "Cashmere Elegance", description: "Sophisticated cashmere units with integrated appliances, demonstrating the seamless integration of form and function." },
+            { src: "/images/handleless-7.jpg", name: "White & Bronze", description: "Contemporary white handleless kitchen elevated with warm bronze trim details, creating a luxurious and refined aesthetic." },
+            { src: "/images/handleless-8.jpg", name: "White & Graphite", description: "A modern two-tone design combining light upper units with bold graphite base cabinets, featuring geometric tile details." },
         ],
     },
 };

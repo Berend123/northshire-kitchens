@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Northshire Kitchens",
         description: "Expertly crafted kitchens with precision and durability.",
-        url: "https://yourwebsite.com", // Replace with your actual domain
+        url: "https://northshirekitchens.com",
         siteName: "Northshire Kitchens",
         images: [
             {
-                url: "/images/og-image.jpg", // Add an OG image to /public/images/
+                url: "/images/Classic-Cambridge.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Northshire Kitchens",
+                alt: "Northshire Kitchens - Expertly Crafted Kitchen Designs",
             },
         ],
         type: "website",
@@ -49,11 +49,11 @@ export default function RootLayout({
             <link rel="icon" href="/images/favicon.ico" />
             <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
             <link rel="manifest" href="/images/site.webmanifest" />
-            <meta property="og:image" content="/images/og-image.jpg" />
+            <meta property="og:image" content="/images/Classic-Cambridge.jpg" />
             <meta property="og:title" content="Northshire Kitchens" />
             <meta property="og:description" content="Expertly crafted kitchens with precision and durability." />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://yourwebsite.com" />
+            <meta property="og:url" content="https://northshirekitchens.com" />
         </head>
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}>
         <main className="relative">{children}</main>

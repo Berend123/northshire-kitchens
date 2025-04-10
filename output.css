@@ -373,9 +373,6 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\'\/hero-kitchen\.jpg\'\)\] {
-    background-image: url('/hero-kitchen.jpg');
-  }
   .bg-cover {
     background-size: cover;
   }

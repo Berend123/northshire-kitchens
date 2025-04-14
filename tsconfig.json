@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    // Target modern JavaScript features
+    "target": "ES2017",
+    // Include standard libraries for DOM, iterators, and ESNext
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    // Allow plain JavaScript files if needed
+    "allowJs": true,
+    // Don’t type-check .d.ts from node_modules
+    "skipLibCheck": true,
+    // Strict type-checking
+    "strict": true,
+    // Don’t emit compiled files
+    "noEmit": true,
+    // Interoperability with CommonJS modules
+    "esModuleInterop": true,
+    // Use ES modules
+    "module": "esnext",
+    // Use Next.js bundler-friendly resolution
+    "moduleResolution": "bundler",
+    // Allow importing JSON files as modules
+    "resolveJsonModule": true,
+    // One TS file = one module
+    "isolatedModules": true,
+    // For React components in TSX
+    "jsx": "preserve",
+    // Speeds up incremental builds
+    "incremental": true,
+    // Let Next’s TypeScript plugin handle next-specific stuff
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    // Tells TS how to interpret `@/*` imports
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  // Files/folders to include for type-checking
+  "include": [
+    ".next/types/**/*.ts", // Next.js auto-generated types
+    "next-env.d.ts", // All .ts/.tsx in your src folder
+    "src/**/*.{ts,tsx}" // Types for pages/app if needed
+    ,
+    "out/types/**/*.ts"
+  ],
+  // Exclude node_modules so we don’t double-check
+  "exclude": [
+    "node_modules"
+  ]
+}

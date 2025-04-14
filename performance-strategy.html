@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northshire Kitchens Performance Strategy</title>
+    <style>
+        :root {
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2d2d2d;
+            --text-primary: #ffffff;
+            --text-secondary: #b3b3b3;
+            --accent: #4a90e2;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --danger: #f44336;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        .section {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .priority {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .priority-emoji {
+            font-size: 1.5rem;
+        }
+
+        .priority-content {
+            flex: 1;
+        }
+
+        .priority-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .priority-notes {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Geist Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        pre {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        .action-plan {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .action-plan-header {
+            font-weight: bold;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .action-plan-item {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .action-plan {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Strategy to Make Northshire Kitchens Website Faster</h1>
+            <p class="subtitle">A comprehensive performance optimization plan</p>
+        </header>
+
+        <div class="section">
+            <h2>1. Image Optimization</h2>
+            <p>Biggest priority! Your images are HUGE (up to 9MB 🤯). Here's the game plan:</p>
+            
+            <div class="priority">
+                <div class="priority-emoji">📸</div>
+                <div class="priority-content">
+                    <div class="priority-title">Use Next.js &lt;Image /&gt; component everywhere</div>
+                    <div class="priority-notes">Automatically compresses, resizes, and lazy loads images</div>
+                </div>
+            </div>
+
+            <div class="priority">
+                <div class="priority-emoji">🛠️</div>
+                <div class="priority-content">
+                    <div class="priority-title">Compress Existing Images</div>
+                    <div class="priority-notes">Tools: TinyPNG, Squoosh, or an automated script. Target &lt; 500KB per image</div>
+                </div>
+            </div>
+
+            <div class="priority">
+                <div class="priority-emoji">⏱️</div>
+                <div class="priority-content">
+                    <div class="priority-title">Lazy Load Offscreen Images</div>
+                    <div class="priority-notes">Next.js &lt;Image /&gt; does this automatically</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Code Splitting</h2>
+            <p>Your page.tsx is 380 lines, yikes!</p>
+            
+            <div class="priority">
+                <div class="priority-emoji">📦</div>
+                <div class="priority-content">
+                    <div class="priority-title">Split Big Sections into Smaller Components</div>
+                    <div class="priority-notes">Move each section into separate files</div>
+                </div>
+            </div>
+
+            <pre><code>import dynamic from "next/dynamic";
+const Testimonials = dynamic(() => import('../components/Testimonials'));</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>3. Optimize Fonts</h2>
+            <div class="priority">
+                <div class="priority-emoji">🔤</div>
+                <div class="priority-content">
+                    <div class="priority-title">Font Optimization</div>
+                    <div class="priority-notes">Self-host fonts, use font-display: swap, preload important fonts</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Reduce JavaScript and CSS</h2>
+            <div class="priority">
+                <div class="priority-emoji">📊</div>
+                <div class="priority-content">
+                    <div class="priority-title">Bundle Analysis</div>
+                    <div class="priority-notes">Install and configure bundle analyzer</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5. Server-side Improvements</h2>
+            <div class="priority">
+                <div class="priority-emoji">🛡️</div>
+                <div class="priority-content">
+                    <div class="priority-title">Security & Performance</div>
+                    <div class="priority-notes">Debounce form submissions, add rate limiting, validate inputs</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>6. Caching and Headers</h2>
+            <pre><code>async headers() {
+  return [
+    {
+      source: '/(.*)',
+      headers: [
+        { key: 'X-Content-Type-Options', value: 'nosniff' },
+        { key: 'X-Frame-Options', value: 'DENY' },
+        { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+      ],
+    },
+  ];
+}</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>7. Monitoring</h2>
+            <div class="priority">
+                <div class="priority-emoji">📈</div>
+                <div class="priority-content">
+                    <div class="priority-title">Performance Monitoring</div>
+                    <div class="priority-notes">Use Lighthouse & Web Vitals for continuous monitoring</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🛠️ Prioritized Action Plan</h2>
+            <div class="action-plan">
+                <div class="action-plan-header">Priority</div>
+                <div class="action-plan-header">Task</div>
+                <div class="action-plan-header">Notes</div>
+
+                <div class="action-plan-item">🥇</div>
+                <div class="action-plan-item">Replace &lt;img&gt; with Next.js &lt;Image&gt;</div>
+                <div class="action-plan-item">Biggest improvement immediately</div>
+
+                <div class="action-plan-item">🥈</div>
+                <div class="action-plan-item">Compress & Convert Images</div>
+                <div class="action-plan-item">WebP preferred</div>
+
+                <div class="action-plan-item">🥉</div>
+                <div class="action-plan-item">Split page.tsx into smaller components</div>
+                <div class="action-plan-item">Cleaner, more maintainable</div>
+
+                <div class="action-plan-item">4️⃣</div>
+                <div class="action-plan-item">Lazy-load non-critical components</div>
+                <div class="action-plan-item">Use dynamic() imports</div>
+
+                <div class="action-plan-item">5️⃣</div>
+                <div class="action-plan-item">Install bundle analyzer</div>
+                <div class="action-plan-item">Find heavy bundles</div>
+
+                <div class="action-plan-item">6️⃣</div>
+                <div class="action-plan-item">Add caching headers</div>
+                <div class="action-plan-item">Especially for images</div>
+
+                <div class="action-plan-item">7️⃣</div>
+                <div class="action-plan-item">Security improvements</div>
+                <div class="action-plan-item">Rate limiting, input validation</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

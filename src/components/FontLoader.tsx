@@ -1,0 +1,41 @@
+'use client';
+
+import React from 'react';
+
+export default function FontLoader() {
+    return (
+        <style>{`
+            @font-face {
+                font-family: 'Geist';
+                src: url('/fonts/Geist-Regular.woff2') format('woff2');
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+            }
+            
+            @font-face {
+                font-family: 'Geist';
+                src: url('/fonts/Geist-Bold.woff2') format('woff2');
+                font-weight: 700;
+                font-style: normal;
+                font-display: swap;
+            }
+            
+            @font-face {
+                font-family: 'Geist Mono';
+                src: url('/fonts/GeistMono-Regular.woff2') format('woff2');
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+            }
+            
+            @font-face {
+                font-family: 'Geist Mono';
+                src: url('/fonts/GeistMono-Bold.woff2') format('woff2');
+                font-weight: 700;
+                font-style: normal;
+                font-display: swap;
+            }
+        `}</style>
+    );
+} 

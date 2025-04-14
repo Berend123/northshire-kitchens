@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Quality Comparison - Northshire Kitchens</title>
+    <style>
+        :root {
+            --bg-primary: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #b3b3b3;
+            --accent: #4a90e2;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .stats {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            font-family: monospace;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .image-container {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .image-container h3 {
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .image-info {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            font-family: monospace;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .zoom-note {
+            text-align: center;
+            color: var(--text-secondary);
+            margin: 2rem 0;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Quality Comparison</h1>
+            <p class="subtitle">Original vs Optimized WebP Images</p>
+            <div class="stats">
+                <p>✨ Optimization Settings:</p>
+                <p>• Format: WebP</p>
+                <p>• Quality: 80%</p>
+                <p>• Max Width: 1200px</p>
+                <p>• Compression: Lossless + Lossy hybrid</p>
+            </div>
+        </header>
+
+        <!-- High Detail Image Comparison (Rydal) -->
+        <div class="comparison">
+            <div class="image-container">
+                <h3>Original Image</h3>
+                <img src="public/images/rydal.jpg" alt="Original Rydal Kitchen">
+                <div class="image-info">
+                    Format: JPG<br>
+                    Size: 8.97 MB<br>
+                    Full Resolution
+                </div>
+            </div>
+            <div class="image-container">
+                <h3>Optimized Image</h3>
+                <img src="public/images/optimized/rydal.webp" alt="Optimized Rydal Kitchen">
+                <div class="image-info">
+                    Format: WebP<br>
+                    Size: 0.07 MB<br>
+                    99.27% smaller
+                </div>
+            </div>
+        </div>
+
+        <!-- Texture Detail Image (Contemporary Linear) -->
+        <div class="comparison">
+            <div class="image-container">
+                <h3>Original Image</h3>
+                <img src="public/images/Contemporary-Linear.jpg" alt="Original Contemporary Linear Kitchen">
+                <div class="image-info">
+                    Format: JPG<br>
+                    Size: 4.12 MB<br>
+                    Full Resolution
+                </div>
+            </div>
+            <div class="image-container">
+                <h3>Optimized Image</h3>
+                <img src="public/images/optimized/Contemporary-Linear.webp" alt="Optimized Contemporary Linear Kitchen">
+                <div class="image-info">
+                    Format: WebP<br>
+                    Size: 0.06 MB<br>
+                    98.56% smaller
+                </div>
+            </div>
+        </div>
+
+        <!-- Dark Image (Oxford) -->
+        <div class="comparison">
+            <div class="image-container">
+                <h3>Original Image</h3>
+                <img src="public/images/oxford.jpg" alt="Original Oxford Kitchen">
+                <div class="image-info">
+                    Format: JPG<br>
+                    Size: 6.28 MB<br>
+                    Full Resolution
+                </div>
+            </div>
+            <div class="image-container">
+                <h3>Optimized Image</h3>
+                <img src="public/images/optimized/oxford.webp" alt="Optimized Oxford Kitchen">
+                <div class="image-info">
+                    Format: WebP<br>
+                    Size: 0.06 MB<br>
+                    98.99% smaller
+                </div>
+            </div>
+        </div>
+
+        <!-- Bright Image with Details (Contemporary Vivo Gloss) -->
+        <div class="comparison">
+            <div class="image-container">
+                <h3>Original Image</h3>
+                <img src="public/images/Contemporary-Vivo Gloss.jpg" alt="Original Contemporary Vivo Gloss Kitchen">
+                <div class="image-info">
+                    Format: JPG<br>
+                    Size: 4.49 MB<br>
+                    Full Resolution
+                </div>
+            </div>
+            <div class="image-container">
+                <h3>Optimized Image</h3>
+                <img src="public/images/optimized/Contemporary-Vivo Gloss.webp" alt="Optimized Contemporary Vivo Gloss Kitchen">
+                <div class="image-info">
+                    Format: WebP<br>
+                    Size: 0.05 MB<br>
+                    98.85% smaller
+                </div>
+            </div>
+        </div>
+
+        <p class="zoom-note">💡 Tip: Right-click and open each image in a new tab to inspect at full resolution</p>
+    </div>
+</body>
+</html> 

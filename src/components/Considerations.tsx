@@ -6,27 +6,27 @@ const considerations = [
     {
         name: "Colours",
         description: "Immerse yourself in the world of kitchen design excellence by Northshire Kitchens. Our carefully curated collection presents kitchens that redefine culinary spaces. Select from a carefully curated palette of 36 paint-to-order colours or choose from over 2,600 bespoke colours.",
-        image: "/images/colours.webp",
+        image: "/images/optimized/colours.webp",
     },
     {
         name: "Storage",
         description: "So, you've chosen your door range and cabinet colour, what about what sits behind the door? We've got a number of options to make access quicker and easier and ensure you maximise the space in your kitchen.",
-        image: "/images/storage.jpg",
+        image: "/images/optimized/storage.webp",
     },
     {
         name: "Sinks",
         description: "Your kitchen sink is bound to be used almost every day so make sure you choose carefully. From larger drying areas to practical half bowls and colour choices we know that the sink is another important piece in your kitchen.",
-        image: "/images/sinks.jpg",
+        image: "/images/optimized/sinks.webp",
     },
     {
         name: "Handles",
         description: "Handles are a highly personal choice and can change the kitchen aesthetic dramatically. Northshire Kitchens offers a multitude of handle shapes, sizes and designs to round off your door choice in style.",
-        image: "/images/handles2.jpg",
+        image: "/images/optimized/handles2.webp",
     },
     {
         name: "Taps",
         description: "Your kitchen sink is bound to be used almost every day so make sure you choose carefully. From larger drying areas to practical half bowls and colour choices we know that the sink is another important piece in your Northshire kitchen.",
-        image: "/images/taps.jpg",
+        image: "/images/optimized/taps.webp",
     },
 ];
 

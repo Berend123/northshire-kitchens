@@ -15,7 +15,7 @@ export function Navbar() {
                 {/* ✅ LOGO (Left) */}
                 <Link href="/" className="flex items-start">
                     <Image
-                        src="/images/optimized/logo.webp"
+                        src="/images/logo.svg"
                         alt="Northshire Kitchens Logo"
                         width={280}
                         height={80}

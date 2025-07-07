@@ -1,5 +1,6 @@
 "use client";  // ✅ Ensure it runs on the client side
 
+import React from "react";
 import { Link } from "react-scroll";
 import Image from "next/image";
 import { Facebook, Mail, Phone, Instagram } from "lucide-react";
@@ -97,9 +98,10 @@ export function Footer() {  // ✅ Ensure it's a named export
                     </a>
 
                     {/* Phone */}
-                    <a href="tel:+447561317660"
+                    <a href="tel:+441609500070"
                        className="hover:text-orange-500 transition">
                         <Phone size={24} />
+                        <span className="sr-only">+44 1609 500070</span>
                     </a>
                 </div>
             </div>

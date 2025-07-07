@@ -1,5 +1,7 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -54,6 +56,20 @@ export default function RootLayout({
             <meta property="og:description" content="Expertly crafted kitchens with precision and durability." />
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://northshirekitchens.com" />
+            {/* Google Ads Tag */}
+            {process.env.NODE_ENV === 'production' && (
+                <>
+                    <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16934924944"></Script>
+                    <Script id="gtag-init" strategy="afterInteractive">
+                        {`
+                          window.dataLayer = window.dataLayer || [];
+                          function gtag(){dataLayer.push(arguments);}
+                          gtag('js', new Date());
+                          gtag('config', 'AW-16934924944');
+                        `}
+                    </Script>
+                </>
+            )}
         </head>
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}>
         <main className="relative">{children}</main>

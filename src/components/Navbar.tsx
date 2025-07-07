@@ -20,7 +20,7 @@ export function Navbar() {
                         width={280}
                         height={80}
                         priority
-                        className="object-contain mt-1"
+                        className="object-contain mt-1 h-auto"
                     />
                 </Link>
 

@@ -280,6 +280,8 @@ export default function Home() {
                                 <p className="mt-2">
                                     <strong>Call Us:</strong>
                                     <a href="tel:+447561317660" className="text-orange-500 hover:underline"> +44 7561 317660</a> <br />
+                                    <strong>Marc's Cell:</strong>
+                                    <a href="tel:+441609500070" className="text-orange-500 hover:underline"> +44 1609 500070</a> <br />
                                     <strong>Email:</strong>
                                     <a href="mailto:sales@northshirekitchens.com" className="text-orange-500 hover:underline"> sales@northshirekitchens.com</a>
                                 </p>

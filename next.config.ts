@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-    distDir: "out", // Custom build directory; keeping this but removing static export so API routes work
+    // Using default .next directory for Vercel compatibility
     images: {
         unoptimized: true, // Fixes issues with Next.js image optimization
     },

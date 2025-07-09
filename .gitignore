@@ -40,3 +40,19 @@ next-env.d.ts
 test_email.py
 
 deploy_key
+
+# build / deploy artifacts
+northshire-site.zip
+*.gz
+live_index.html
+
+# temp SFTP batch files
+sftp_*.txt
+
+# server stubs / downloaded files
+passenger_wsgi.py
+
+# editor settings
+.obsidian/
+
+deploy_key.pub

@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
     images: {
         unoptimized: true, // Fixes issues with Next.js image optimization
     },
+    output: 'export', // Generate pure static site (out/) for GoDaddy
 };
 
 export default nextConfig;

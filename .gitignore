@@ -38,3 +38,5 @@ next-env.d.ts
 
 # python test files
 test_email.py
+
+deploy_key

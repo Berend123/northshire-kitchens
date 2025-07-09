@@ -22,7 +22,12 @@ export default function Home() {
         setStatus('loading');
 
         try {
-            const response = await fetch('/api/contact', {
+            // Use a configurable endpoint so the static site can call the Python mailer on GoDaddy.
+            // If NEXT_PUBLIC_CONTACT_ENDPOINT is defined at build time, it will be inlined;
+            // otherwise default to the Python app path.
+            const contactEndpoint = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT || '/pyapp/contact';
+
+            const response = await fetch(contactEndpoint, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -279,9 +284,9 @@ export default function Home() {
                                 <h3 className="text-xl font-semibold">📞 Get in Touch</h3>
                                 <p className="mt-2">
                                     <strong>Call Us:</strong>
+                                    <a href="tel:+441609500070" className="text-orange-500 hover:underline"> 01609 500070</a> <br />
+                                    <strong>Call Us:</strong>
                                     <a href="tel:+447561317660" className="text-orange-500 hover:underline"> +44 7561 317660</a> <br />
-                                    <strong>Marc's Cell:</strong>
-                                    <a href="tel:+441609500070" className="text-orange-500 hover:underline"> +44 1609 500070</a> <br />
                                     <strong>Email:</strong>
                                     <a href="mailto:sales@northshirekitchens.com" className="text-orange-500 hover:underline"> sales@northshirekitchens.com</a>
                                 </p>

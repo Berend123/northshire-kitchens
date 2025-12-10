@@ -1,24 +1,21 @@
-"use client";  // ✅ Ensure it runs on the client side
+"use client";
 
 import { Link } from "react-scroll";
-import Image from "next/image";
 import { Facebook, Mail, Phone, Instagram } from "lucide-react";
 
-export function Footer() {  // ✅ Ensure it's a named export
+export function Footer() {
     return (
         <footer className="bg-gray-900 text-white py-10 mt-16">
             <div className="container flex flex-col md:flex-row items-center justify-between mx-auto px-6 md:px-12 lg:px-24">
 
-                {/* ✅ Brand & Copyright */}
                 <div className="text-center md:text-left">
                     <h2 className="text-2xl font-bold tracking-wide">Northshire Kitchens</h2>
                     <p className="text-sm mt-2">
                         &copy; {new Date().getFullYear()} Northshire Kitchens. All Rights Reserved.
                     </p>
-                    {/* ✅ Document Links */}
                     <div className="mt-4 text-sm space-y-1">
                         <p>
-                            <a href="/documents/Privacy Policy.pdf" 
+                            <a href="/documents/Privacy Policy.pdf"
                                target="_blank" 
                                rel="noopener noreferrer" 
                                className="hover:text-orange-500 transition">
@@ -52,7 +49,6 @@ export function Footer() {  // ✅ Ensure it's a named export
                     </div>
                 </div>
 
-                {/* ✅ Navigation Links */}
                 <ul className="flex gap-6 mt-4 md:mt-0 text-sm">
                     <li className="hover:text-orange-500 transition">
                         <Link to="hero" smooth={true} duration={600}>Home</Link>
@@ -71,33 +67,24 @@ export function Footer() {  // ✅ Ensure it's a named export
                     </li>
                 </ul>
 
-                {/* ✅ Social Media Icons */}
                 <div className="flex gap-4 mt-4 md:mt-0">
-
-                    {/* Facebook */}
-                    <a href="https://www.facebook.com/profile.php?id=61573564756417"
+                    <a href="https://www.facebook.com/NorthshireGroup"
                        target="_blank"
                        rel="noopener noreferrer"
                        className="hover:text-orange-500 transition">
                         <Facebook size={24} />
                     </a>
-
-                    {/* Instagram */}
-                    <a href="https://www.instagram.com/northshire_kitchens"
+                    <a href="https://www.instagram.com/northshire_group"
                        target="_blank"
                        rel="noopener noreferrer"
                        className="hover:text-orange-500 transition">
                         <Instagram size={24} />
                     </a>
-
-                    {/* Email */}
                     <a href="mailto:sales@northshirekitchens.com"
                        className="hover:text-orange-500 transition">
                         <Mail size={24} />
                     </a>
-
-                    {/* Phone */}
-                    <a href="tel:+447561317660"
+                    <a href="tel:+447936386392"
                        className="hover:text-orange-500 transition">
                         <Phone size={24} />
                     </a>

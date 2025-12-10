@@ -81,6 +81,7 @@ export function Footer() {  // ✅ Ensure it's a named export
                        rel="noopener noreferrer"
                        className="hover:text-orange-500 transition">
                         <Facebook size={24} />
+                        <span className="sr-only">Northshire Group on Facebook</span>
                     </a>
 
                     {/* Instagram */}
@@ -89,12 +90,14 @@ export function Footer() {  // ✅ Ensure it's a named export
                        rel="noopener noreferrer"
                        className="hover:text-orange-500 transition">
                         <Instagram size={24} />
+                        <span className="sr-only">@northshire_group on Instagram</span>
                     </a>
 
                     {/* Email */}
                     <a href="mailto:sales@northshirekitchens.com"
                        className="hover:text-orange-500 transition">
                         <Mail size={24} />
+                        <span className="sr-only">Email sales@northshirekitchens.com</span>
                     </a>
 
                     {/* Phone */}

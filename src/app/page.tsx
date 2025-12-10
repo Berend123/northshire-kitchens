@@ -282,28 +282,57 @@ export default function Home() {
                             {/* Contact Info & Socials */}
                             <div className="bg-white bg-opacity-90 text-gray-900 shadow-lg rounded-lg p-6">
                                 <h3 className="text-xl font-semibold">📞 Get in Touch</h3>
-                                <p className="mt-2">
-                                    <strong>Call Us:</strong>
-                                    <a href="tel:+447936386392" className="text-orange-500 hover:underline"> +44 7936 386392</a> <br />
-                                    <strong>WhatsApp:</strong>
-                                    <a href="https://wa.me/447936386392" className="text-orange-500 hover:underline"> Message us on WhatsApp</a> <br />
-                                    <strong>Email:</strong>
-                                    <a href="mailto:sales@northshirekitchens.com" className="text-orange-500 hover:underline"> sales@northshirekitchens.com</a>
-                                </p>
+                                <ul className="mt-2 space-y-2">
+                                    <li>
+                                        <strong>Call Us:</strong>{' '}
+                                        <a href="tel:+447936386392" className="text-orange-500 hover:underline">+44 7936 386392</a>
+                                    </li>
+                                    <li>
+                                        <strong>WhatsApp:</strong>{' '}
+                                        <a
+                                            href="https://wa.me/447936386392"
+                                            className="text-orange-500 hover:underline"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Message us on WhatsApp
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <strong>Email:</strong>{' '}
+                                        <a href="mailto:sales@northshirekitchens.com" className="text-orange-500 hover:underline">
+                                            sales@northshirekitchens.com
+                                        </a>
+                                    </li>
+                                </ul>
 
                                 <h3 className="text-xl font-semibold mt-6">🔹 Follow Us</h3>
-                                <p>
-                                    📸 Facebook:
-                                    <a href="https://www.facebook.com/northshiregroup" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">
-                                        Northshire Group
-                                    </a>
-                                </p>
-                                <p>
-                                    📱 Instagram:
-                                    <a href="https://www.instagram.com/northshire_group" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">
-                                        @northshire_group
-                                    </a>
-                                </p>
+                                <ul className="space-y-2">
+                                    <li>
+                                        <span className="mr-2" aria-hidden="true">📘</span>
+                                        <span className="sr-only">Facebook:</span>
+                                        <a
+                                            href="https://www.facebook.com/northshiregroup"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-orange-500 hover:underline"
+                                        >
+                                            Northshire Group
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span className="mr-2" aria-hidden="true">📸</span>
+                                        <span className="sr-only">Instagram:</span>
+                                        <a
+                                            href="https://www.instagram.com/northshire_group"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-orange-500 hover:underline"
+                                        >
+                                            @northshire_group
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 

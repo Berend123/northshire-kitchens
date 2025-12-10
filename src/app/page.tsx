@@ -284,9 +284,9 @@ export default function Home() {
                                 <h3 className="text-xl font-semibold">📞 Get in Touch</h3>
                                 <p className="mt-2">
                                     <strong>Call Us:</strong>
-                                    <a href="tel:+441609500070" className="text-orange-500 hover:underline"> 01609 500070</a> <br />
-                                    <strong>Call Us:</strong>
-                                    <a href="tel:+447561317660" className="text-orange-500 hover:underline"> +44 7561 317660</a> <br />
+                                    <a href="tel:+447936386392" className="text-orange-500 hover:underline"> +44 7936 386392</a> <br />
+                                    <strong>WhatsApp:</strong>
+                                    <a href="https://wa.me/447936386392" className="text-orange-500 hover:underline"> Message us on WhatsApp</a> <br />
                                     <strong>Email:</strong>
                                     <a href="mailto:sales@northshirekitchens.com" className="text-orange-500 hover:underline"> sales@northshirekitchens.com</a>
                                 </p>
@@ -294,14 +294,14 @@ export default function Home() {
                                 <h3 className="text-xl font-semibold mt-6">🔹 Follow Us</h3>
                                 <p>
                                     📸 Facebook:
-                                    <a href="https://www.facebook.com/profile.php?id=61573564756417" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">
-                                        Northshire Kitchens
+                                    <a href="https://www.facebook.com/northshiregroup" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">
+                                        Northshire Group
                                     </a>
                                 </p>
                                 <p>
                                     📱 Instagram:
-                                    <a href="https://www.instagram.com/northshire_kitchens" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">
-                                        @northshire_kitchens
+                                    <a href="https://www.instagram.com/northshire_group" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">
+                                        @northshire_group
                                     </a>
                                 </p>
                             </div>

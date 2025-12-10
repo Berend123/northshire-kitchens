@@ -3,7 +3,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import Image from "next/image";
-import { Facebook, Mail, Phone, Instagram } from "lucide-react";
+import { Facebook, Mail, Phone, Instagram, MessageCircle } from "lucide-react";
 
 export function Footer() {  // ✅ Ensure it's a named export
     return (
@@ -76,7 +76,7 @@ export function Footer() {  // ✅ Ensure it's a named export
                 <div className="flex gap-4 mt-4 md:mt-0">
 
                     {/* Facebook */}
-                    <a href="https://www.facebook.com/profile.php?id=61573564756417"
+                    <a href="https://www.facebook.com/northshiregroup"
                        target="_blank"
                        rel="noopener noreferrer"
                        className="hover:text-orange-500 transition">
@@ -84,7 +84,7 @@ export function Footer() {  // ✅ Ensure it's a named export
                     </a>
 
                     {/* Instagram */}
-                    <a href="https://www.instagram.com/northshire_kitchens"
+                    <a href="https://www.instagram.com/northshire_group"
                        target="_blank"
                        rel="noopener noreferrer"
                        className="hover:text-orange-500 transition">
@@ -98,10 +98,19 @@ export function Footer() {  // ✅ Ensure it's a named export
                     </a>
 
                     {/* Phone */}
-                    <a href="tel:+441609500070"
+                    <a href="https://wa.me/447936386392"
+                       className="hover:text-orange-500 transition"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <MessageCircle size={24} />
+                        <span className="sr-only">Message us on WhatsApp</span>
+                    </a>
+
+                    {/* Phone */}
+                    <a href="tel:+447936386392"
                        className="hover:text-orange-500 transition">
                         <Phone size={24} />
-                        <span className="sr-only">+44 1609 500070</span>
+                        <span className="sr-only">+44 7936 386392</span>
                     </a>
                 </div>
             </div>

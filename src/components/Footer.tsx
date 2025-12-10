@@ -79,8 +79,9 @@ export function Footer() {  // ✅ Ensure it's a named export
                     <a href="https://www.facebook.com/northshiregroup"
                        target="_blank"
                        rel="noopener noreferrer"
-                       className="hover:text-orange-500 transition">
-                        <Facebook size={24} />
+                       className="hover:text-orange-500 transition"
+                       aria-label="Northshire Group on Facebook">
+                        <Facebook size={24} aria-hidden="true" />
                         <span className="sr-only">Northshire Group on Facebook</span>
                     </a>
 
@@ -88,15 +89,17 @@ export function Footer() {  // ✅ Ensure it's a named export
                     <a href="https://www.instagram.com/northshire_group"
                        target="_blank"
                        rel="noopener noreferrer"
-                       className="hover:text-orange-500 transition">
-                        <Instagram size={24} />
+                       className="hover:text-orange-500 transition"
+                       aria-label="@northshire_group on Instagram">
+                        <Instagram size={24} aria-hidden="true" />
                         <span className="sr-only">@northshire_group on Instagram</span>
                     </a>
 
                     {/* Email */}
                     <a href="mailto:sales@northshirekitchens.com"
-                       className="hover:text-orange-500 transition">
-                        <Mail size={24} />
+                       className="hover:text-orange-500 transition"
+                       aria-label="Email sales at northshire kitchens dot com">
+                        <Mail size={24} aria-hidden="true" />
                         <span className="sr-only">Email sales@northshirekitchens.com</span>
                     </a>
 
@@ -104,15 +107,17 @@ export function Footer() {  // ✅ Ensure it's a named export
                     <a href="https://wa.me/447936386392"
                        className="hover:text-orange-500 transition"
                        target="_blank"
-                       rel="noopener noreferrer">
-                        <MessageCircle size={24} />
+                       rel="noopener noreferrer"
+                       aria-label="Message us on WhatsApp">
+                        <MessageCircle size={24} aria-hidden="true" />
                         <span className="sr-only">Message us on WhatsApp</span>
                     </a>
 
                     {/* Phone */}
                     <a href="tel:+447936386392"
-                       className="hover:text-orange-500 transition">
-                        <Phone size={24} />
+                       className="hover:text-orange-500 transition"
+                       aria-label="Call us on +44 7936 386392">
+                        <Phone size={24} aria-hidden="true" />
                         <span className="sr-only">+44 7936 386392</span>
                     </a>
                 </div>

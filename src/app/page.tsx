@@ -282,32 +282,45 @@ export default function Home() {
                             {/* Contact Info & Socials */}
                             <div className="bg-white bg-opacity-90 text-gray-900 shadow-lg rounded-lg p-6">
                                 <h3 className="text-xl font-semibold">📞 Get in Touch</h3>
-                                <ul className="mt-2 space-y-2">
-                                    <li>
-                                        <strong>Call Us:</strong>{' '}
-                                        <a href="tel:+447936386392" className="text-orange-500 hover:underline">+44 7936 386392</a>
-                                    </li>
-                                    <li>
-                                        <strong>WhatsApp:</strong>{' '}
-                                        <a
-                                            href="https://wa.me/447936386392"
-                                            className="text-orange-500 hover:underline"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Message us on WhatsApp
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <strong>Email:</strong>{' '}
-                                        <a href="mailto:sales@northshirekitchens.com" className="text-orange-500 hover:underline">
-                                            sales@northshirekitchens.com
-                                        </a>
-                                    </li>
-                                </ul>
+                                <address className="not-italic mt-2" aria-label="Northshire Kitchens contact details">
+                                    <ul className="space-y-2">
+                                        <li>
+                                            <strong>Call Us:</strong>{' '}
+                                            <a
+                                                href="tel:+447936386392"
+                                                className="text-orange-500 hover:underline"
+                                                aria-label="Call Northshire Kitchens on +44 7936 386392"
+                                            >
+                                                +44 7936 386392
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <strong>WhatsApp:</strong>{' '}
+                                            <a
+                                                href="https://wa.me/447936386392"
+                                                className="text-orange-500 hover:underline"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label="Open WhatsApp chat with Northshire Kitchens"
+                                            >
+                                                Message us on WhatsApp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <strong>Email:</strong>{' '}
+                                            <a
+                                                href="mailto:sales@northshirekitchens.com"
+                                                className="text-orange-500 hover:underline"
+                                                aria-label="Email sales at northshirekitchens dot com"
+                                            >
+                                                sales@northshirekitchens.com
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </address>
 
                                 <h3 className="text-xl font-semibold mt-6">🔹 Follow Us</h3>
-                                <ul className="space-y-2">
+                                <ul className="space-y-2" aria-label="Northshire Kitchens social media links">
                                     <li>
                                         <span className="mr-2" aria-hidden="true">📘</span>
                                         <span className="sr-only">Facebook:</span>
@@ -316,6 +329,7 @@ export default function Home() {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-orange-500 hover:underline"
+                                            aria-label="Northshire Group on Facebook"
                                         >
                                             Northshire Group
                                         </a>
@@ -328,6 +342,7 @@ export default function Home() {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-orange-500 hover:underline"
+                                            aria-label="@northshire_group on Instagram"
                                         >
                                             @northshire_group
                                         </a>

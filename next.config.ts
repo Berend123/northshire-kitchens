@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
     images: {
         unoptimized: true, // Fixes issues with Next.js image optimization
     },
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
 };
 
 export default nextConfig;

@@ -93,7 +93,7 @@ export default function Contact() {
                                     rel="noopener noreferrer"
                                     className="text-orange-500 hover:underline"
                                 >
-                                    Message us on WhatsApp
+                                    +44 7936 386392
                                 </a>
                             </span>
                             <span className="block">

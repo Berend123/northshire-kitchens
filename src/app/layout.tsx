@@ -4,6 +4,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
+const iconVersion = "20251216";
+
 const geistSans = Geist({
     variable: "--font-geist-sans",
     subsets: ["latin"],
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
     title: "Northshire Kitchens",
     description: "Expertly crafted kitchens with precision and durability.",
     icons: {
-        icon: "/favicon.ico",
-        shortcut: "/favicon.ico",
-        apple: "/apple-touch-icon.png",
+        icon: `/favicon.ico?v=${iconVersion}`,
+        shortcut: `/favicon.ico?v=${iconVersion}`,
+        apple: `/apple-touch-icon.png?v=${iconVersion}`,
     },
     openGraph: {
         title: "Northshire Kitchens",
@@ -48,9 +50,9 @@ export default function RootLayout({
     return (
         <html lang="en">
         <head>
-            <link rel="icon" href="/favicon.ico" />
-            <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+            <link rel="icon" href={`/favicon.ico?v=${iconVersion}`} />
+            <link rel="icon" type="image/svg+xml" href={`/favicon.svg?v=${iconVersion}`} />
+            <link rel="apple-touch-icon" sizes="180x180" href={`/apple-touch-icon.png?v=${iconVersion}`} />
             <link rel="manifest" href="/images/site.webmanifest" />
 
             <meta property="og:image" content="/images/Classic-Cambridge.jpg" />

@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     title: "Northshire Kitchens",
     description: "Expertly crafted kitchens with precision and durability.",
     icons: {
-        icon: "/images/favicon.ico",
-        shortcut: "/images/favicon.ico",
-        apple: "/images/apple-touch-icon.png",
+        icon: "/favicon.ico",
+        shortcut: "/favicon.ico",
+        apple: "/apple-touch-icon.png",
     },
     openGraph: {
         title: "Northshire Kitchens",
@@ -48,8 +48,9 @@ export default function RootLayout({
     return (
         <html lang="en">
         <head>
-            <link rel="icon" href="/images/favicon.ico" />
-            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
             <link rel="manifest" href="/images/site.webmanifest" />
 
             <meta property="og:image" content="/images/Classic-Cambridge.jpg" />

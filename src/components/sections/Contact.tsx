@@ -17,20 +17,23 @@ export default function Contact() {
         setStatus("loading");
 
         try {
-            const defaultEndpoint =
-                typeof window !== "undefined" &&
-                (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
-                    ? "/api/contact"
-                    : "/pyapp/contact";
-            const contactEndpoint = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT || defaultEndpoint;
+            const configuredEndpoint = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT;
+            const primaryEndpoint = configuredEndpoint || "/api/contact";
 
-            const response = await fetch(contactEndpoint, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formState),
-            });
+            const sendMessage = (endpoint: string) =>
+                fetch(endpoint, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formState),
+                });
+
+            let response = await sendMessage(primaryEndpoint);
+
+            if (!configuredEndpoint && (response.status === 404 || response.status === 405)) {
+                response = await sendMessage("/pyapp/contact");
+            }
 
             if (!response.ok) throw new Error("Failed to send message");
 

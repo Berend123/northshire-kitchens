@@ -17,7 +17,14 @@ export default function Contact() {
         setStatus("loading");
 
         try {
-            const response = await fetch("/api/contact", {
+            const defaultEndpoint =
+                typeof window !== "undefined" &&
+                (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
+                    ? "/api/contact"
+                    : "/pyapp/contact";
+            const contactEndpoint = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT || defaultEndpoint;
+
+            const response = await fetch(contactEndpoint, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -73,7 +80,7 @@ export default function Contact() {
                         <h3 className="text-xl font-semibold mt-6">🕒 Opening Hours</h3>
                         <p>
                             Monday – Friday: 9:00 AM – 5:00 PM <br />
-                            Saturday: 10:00 AM – 2:00 PM <br />
+                            Saturday: Closed <br />
                             Sunday: Closed
                         </p>
                     </div>

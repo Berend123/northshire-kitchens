@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-    output: "export", // Enables static site export
-    distDir: "out", // The folder where static files will be placed
+    output: "export", // Static site export (writes to out/)
     images: {
         unoptimized: true, // Fixes issues with Next.js image optimization
     },

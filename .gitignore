@@ -2,6 +2,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.yarn/install-state.gz
 
 # testing
 /coverage
@@ -16,11 +17,14 @@
 # misc
 .DS_Store
 *.pem
+*.gz
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+dev.log
+dev.pid
 
 # local env files
 .env*.local
@@ -33,8 +37,23 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# python test files
+test_email.py
+
+# deploy artifacts / downloaded files
+deploy_key
+deploy_key.pub
+live_index.html
+northshire-site.zip
+sftp_*.txt
+passenger_wsgi.py
+
+# editor settings
+.obsidian/
+
 # IDE
 .idea/
 .vscode/
 *.swp
-*.swo *.zip
+*.swo
+*.zip
